@@ -19,7 +19,7 @@ while (true) {
 		while (!$success) {
 			foreach (["SMS", "CALL"] as $method) {
 				if (strtoupper($argv[2]) === "ALL" || strtoupper($argv[2]) === $method) {
-					$result = @file_get_contents("https://api.grab.com/grabid/v1/phone/otp", false, stream_context_create([
+					$result = @file_get_contents("https://www.citcall.com/demo/", false, stream_context_create([
 						"http" => [
 							"method" => "POST",
 							"header" => "Content-type: application/x-www-form-urlencoded",
